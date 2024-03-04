@@ -6,7 +6,9 @@ GCC_SRCDIR = GCC_SRCDIR_not_set
 MUSL_SRCDIR = MUSL_SRCDIR_not_set
 
 GCC_CONFIG_FOR_TARGET = 
-COMMON_CONFIG = 
+COMMON_CONFIG = --with-included-gettext \
+	--with-libintl-type=static \
+	--without-libintl-prefix
 GCC_CONFIG = 
 TOOLCHAIN_CONFIG = 
 
@@ -79,9 +81,7 @@ FULL_GCC_CONFIG = --enable-languages=c,c++ \
 	--disable-gnu-indirect-function \
 	--disable-libmpx \
 	--enable-initfini-array \
-	--enable-libstdcxx-time=rt \
-	--with-included-gettext \
-	--with-libintl-type=static
+	--enable-libstdcxx-time=rt
 
 FULL_MUSL_CONFIG = $(MUSL_CONFIG) \
 	--prefix= --host=$(TARGET)
