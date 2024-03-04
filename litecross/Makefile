@@ -80,7 +80,8 @@ FULL_GCC_CONFIG = --enable-languages=c,c++ \
 	--disable-libmpx \
 	--enable-initfini-array \
 	--enable-libstdcxx-time=rt \
-	--with-included-gettext
+	--with-included-gettext \
+	--with-libintl-type=static
 
 FULL_MUSL_CONFIG = $(MUSL_CONFIG) \
 	--prefix= --host=$(TARGET)
