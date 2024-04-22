@@ -81,7 +81,8 @@ FULL_GCC_CONFIG = --enable-languages=c,c++ \
 	--disable-gnu-indirect-function \
 	--disable-libmpx \
 	--enable-initfini-array \
-	--enable-libstdcxx-time=rt
+	--enable-libstdcxx-time=rt \
+	--without-zstd
 
 FULL_MUSL_CONFIG = $(MUSL_CONFIG) \
 	--prefix= --host=$(TARGET)
