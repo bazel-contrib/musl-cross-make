@@ -8,7 +8,8 @@ MUSL_SRCDIR = MUSL_SRCDIR_not_set
 GCC_CONFIG_FOR_TARGET = 
 COMMON_CONFIG = --with-included-gettext \
 	--with-libintl-type=static \
-	--without-libintl-prefix
+	--without-libintl-prefix \
+	--without-isl
 GCC_CONFIG = 
 TOOLCHAIN_CONFIG = 
 
